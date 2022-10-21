@@ -1,0 +1,76 @@
+@use 'mixins';
+
+.features {
+  padding: 4rem 0;
+  &__container {
+    @include mixins.container;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &__header {
+    @include mixins.headers;
+  }
+  &__title {
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+  }
+  &__paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  &__cards {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem 10rem;
+
+    @media (min-width: 1440px) {
+      width: 85%;
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      background: black;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  &__card-icon {
+    background: blue;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    &--keyboard {
+      background: #321922;
+      color: #ff5488;
+    }
+    &--book {
+      background: #322d12;
+      color: #c8aa1b;
+    }
+    &--desktop {
+      background: #202e23;
+      color: #85df90;
+    }
+    &--electric {
+      background: #102b34;
+      color: #1fc9ff;
+    }
+  }
+  &__card-title {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+  }
+  &__card-paragraph {
+    line-height: 1.4rem;
+  }
+}
