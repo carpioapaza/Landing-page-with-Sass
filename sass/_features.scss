@@ -19,6 +19,7 @@
   &__paragraph {
     font-size: 1rem;
     line-height: 1.5rem;
+    color: #a2a2a2;
   }
 
   &__cards {
@@ -34,7 +35,6 @@
     }
     @media (max-width: 768px) {
       width: 100%;
-      background: black;
     }
   }
   &__card {
@@ -72,5 +72,6 @@
   }
   &__card-paragraph {
     line-height: 1.4rem;
+    color: #a2a2a2;
   }
 }

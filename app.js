@@ -6,6 +6,12 @@ function Main() {
       $navbar = e.target.previousElementSibling;
       $navbar.classList.toggle('reveal');
       $menu.classList.toggle('reveal');
+      console.log($menu, $navbar);
+      if ($menu.classList.contains('reveal')) {
+        $menu.textContent = 'close';
+      } else {
+        $menu.textContent = 'menu';
+      }
     }
   });
 }
