@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em,
+ul {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: red;
+}
+.header__container {
+  width: 80%;
+  max-width: 1820px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: seagreen;
+  height: 4.25rem;
+}
+.header__logo {
+  display: flex;
+  gap: 1rem;
+}
+.header__navbar {
+  display: flex;
+  gap: 1rem;
+}
+body {
+  background: hsl(220deg, 10%, 6%);
+  color: white;
+  font-family: system-ui;
+}
+
+img {
+  width: 15px;
+}
+
+.dm-cta {
+  background: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.hero {
+  padding-top: 10rem;
+  background: salmon;
+  width: 100%;
+  height: 100vh;
+}
+.hero__container {
+  width: 80%;
+  max-width: 1820px;
+  margin: 0 auto;
+  background: seagreen;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  position: relative;
+}
+.hero__text {
+  width: 80%;
+  margin: auto;
+  background: sandybrown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.hero__title {
+  font-size: 4rem;
+}
+.hero__paragraph {
+  font-size: 1.2rem;
+  padding: 0 3rem;
+}
+
+.terminal {
+  width: 80%;
+  margin: auto;
+  background: hsl(0deg, 0%, 15%);
+  border-radius: 1rem;
+  background-image: linear-gradient(135deg, #ff4593, #ffe713 32%, #17d7ff 66%, #077bff);
+  padding: 1px;
+  overflow: hidden;
+  position: relative;
+}
+.terminal::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, purple, green, hotpink);
+  z-index: -1;
+  filter: blur(20px);
+  background-image: linear-gradient(135deg, #ff4593, #ffe713 33%, #17d7ff 66%, #077bff);
+}
+.terminal__search {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 1rem 1rem 0 0;
+  border-bottom: 1px solid #444;
+}
+.terminal__input {
+  flex: 1;
+}
+.terminal__result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  background-color: #262626;
+}
+.terminal__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+.terminal__item--focus {
+  background: #363636;
+}
+.features__container {
+  width: 80%;
+  max-width: 1820px;
+  margin: 0 auto;
+  background: peru;
+}
+.features__header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.features__title {
+  font-size: 2.8rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.features__paragraph {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.features__cards {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem 5rem;
+  background: seagreen;
+}
+@media (max-width: 768px) {
+  .features__cards {
+    width: 100%;
+  }
+}
+.features__card {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+.features__card-icon {
+  background: blue;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+.features__card-icon--keyboard {
+  background: #321922;
+  color: #ff5488;
+}
+.features__card-icon--book {
+  background: #322d12;
+  color: #c8aa1b;
+}
+.features__card-icon--desktop {
+  background: #202e23;
+  color: #85df90;
+}
+.features__card-icon--electric {
+  background: #102b34;
+  color: #1fc9ff;
+}
+.features__card-title {
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

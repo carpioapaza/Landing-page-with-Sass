@@ -1,0 +1,15 @@
+@mixin container {
+  width: 90%;
+  max-width: 1820px;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@mixin headers {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
