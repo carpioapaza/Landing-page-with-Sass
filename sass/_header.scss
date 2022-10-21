@@ -4,10 +4,10 @@
   top: 0;
   width: 100%;
   position: fixed;
-  z-index: 999;
+  z-index: 9;
   background: rgba(14, 15, 17, 0.5);
   backdrop-filter: blur(10px);
-
+  clip-path: inset(0 0 0 0);
   &__container {
     @include mixins.container;
     display: flex;
